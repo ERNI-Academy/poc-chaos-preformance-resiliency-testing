@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microservices.GeneratingChaos.Services.Weather</name>
+    </assembly>
+    <members>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Controllers.SunController">
+            <summary>
+            Class SunController.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Controllers.SunController._logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Controllers.SunController._date">
+            <summary>
+            The date
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Controllers.SunController.#ctor(Microsoft.Extensions.Logging.ILogger{Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController},Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Generators.Interfaces.IDate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Controllers.SunController"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="date">The date.</param>
+            <exception cref="T:System.ArgumentNullException">logger</exception>
+            <exception cref="T:System.ArgumentNullException">date</exception>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Controllers.SunController.Get(System.Guid)">
+            <summary>
+            Gets the specified city identifier.
+            </summary>
+            <param name="cityId">The city identifier.</param>
+            <returns>IActionResult.</returns>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController">
+            <summary>
+            Class WeatherForecastController.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController._logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController._mediator">
+            <summary>
+            The mediator
+            </summary>
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController._cache">
+            <summary>
+            The cache
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController},MediatR.IMediator,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="mediator">The mediator.</param>
+            <param name="cache">The cache.</param>
+            <exception cref="T:System.ArgumentNullException">logger</exception>
+            <exception cref="T:System.ArgumentNullException">mediator</exception>
+            <exception cref="T:System.ArgumentNullException">cache</exception>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController.GetAllAsync">
+            <summary>
+            get all weather forecasts as an asynchronous operation.
+            </summary>
+            <returns>Task&lt;IActionResult&gt;.</returns>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Controllers.WeatherForecastController.GetByCityAsync(System.Guid)">
+            <summary>
+            get all weather forcast by city as an asynchronous operation.
+            </summary>
+            <param name="cityId">The city identifier.</param>
+            <returns>Task&lt;IActionResult&gt;.</returns>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Domain.CommandResponses.ReadWeatherCommandResponse">
+            <summary>
+            Class ReadWeatherCommandResponse.
+            Implements the <see cref="!:Microservices.GeneratingChaos.BuildingBlocks.Helpers.BaseCommandResponse&lt;System.Collections.Generic.List&lt;Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast&gt;&gt;" />
+            </summary>
+            <seealso cref="!:Microservices.GeneratingChaos.BuildingBlocks.Helpers.BaseCommandResponse&lt;System.Collections.Generic.List&lt;Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast&gt;&gt;" />
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Domain.Commands.ReadWeatherCommand">
+            <summary>
+            Class ReadWeatherCommand.
+            Implements the <see cref="!:MediatR.IRequest&lt;Microservices.GeneratingChaos.Services.Weather.Domain.CommandResponses.ReadWeatherCommandResponse&gt;" />
+            </summary>
+            <seealso cref="!:MediatR.IRequest&lt;Microservices.GeneratingChaos.Services.Weather.Domain.CommandResponses.ReadWeatherCommandResponse&gt;" />
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Commands.ReadWeatherCommand.CityId">
+            <summary>
+            Gets or sets the city identifier.
+            </summary>
+            <value>The city identifier.</value>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.Sun">
+            <summary>
+            Class Sun.
+            Implements the <see cref="T:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.SeedWork.Entity" />
+            </summary>
+            <seealso cref="T:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.SeedWork.Entity" />
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.Sun.CityId">
+            <summary>
+            Gets or sets the city identifier.
+            </summary>
+            <value>The city identifier.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.Sun.CurrentDate">
+            <summary>
+            Gets or sets the current date.
+            </summary>
+            <value>The current date.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.Sun.SunRise">
+            <summary>
+            Gets or sets the sun rise.
+            </summary>
+            <value>The sun rise.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.Sun.Sunset">
+            <summary>
+            Gets or sets the sunset.
+            </summary>
+            <value>The sunset.</value>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast">
+            <summary>
+            Class WeatherForecast.
+            Implements the <see cref="T:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.SeedWork.Entity" />
+            </summary>
+            <seealso cref="T:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.SeedWork.Entity" />
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast.CityId">
+            <summary>
+            Gets or sets the city identifier.
+            </summary>
+            <value>The city identifier.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast.Date">
+            <summary>
+            Gets or sets the date.
+            </summary>
+            <value>The date.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast.Temperature">
+            <summary>
+            Gets or sets the temperature.
+            </summary>
+            <value>The temperature.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast.Humidity">
+            <summary>
+            Gets or sets the humidity.
+            </summary>
+            <value>The humidity.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast.Pressure">
+            <summary>
+            Gets or sets the pressure.
+            </summary>
+            <value>The pressure.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast.Icon">
+            <summary>
+            Gets or sets the icon.
+            </summary>
+            <value>The icon.</value>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Domain.Models.Sun">
+            <summary>
+            Class Sun.
+            </summary>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.Sun.CityId">
+            <summary>
+            Gets or sets the city identifier.
+            </summary>
+            <value>The city identifier.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.Sun.CurrentDate">
+            <summary>
+            Gets or sets the current date.
+            </summary>
+            <value>The current date.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.Sun.SunRise">
+            <summary>
+            Gets or sets the sun rise.
+            </summary>
+            <value>The sun rise.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.Sun.Sunset">
+            <summary>
+            Gets or sets the sunset.
+            </summary>
+            <value>The sunset.</value>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast">
+            <summary>
+            Class WeatherForecast.
+            </summary>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast.CityId">
+            <summary>
+            Gets or sets the city identifier.
+            </summary>
+            <value>The city identifier.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast.Date">
+            <summary>
+            Gets or sets the date.
+            </summary>
+            <value>The date.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast.Temperature">
+            <summary>
+            Gets or sets the temperature.
+            </summary>
+            <value>The temperature.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast.Humidity">
+            <summary>
+            Gets or sets the humidity.
+            </summary>
+            <value>The humidity.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast.Pressure">
+            <summary>
+            Gets or sets the pressure.
+            </summary>
+            <value>The pressure.</value>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Domain.Models.WeatherForecast.Icon">
+            <summary>
+            Gets or sets the icon.
+            </summary>
+            <value>The icon.</value>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.ApplicationModule">
+            <summary>
+            Application Modile for Autofac
+            </summary>
+            <seealso cref="T:Autofac.Module" />
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.ApplicationModule._configuration">
+            <summary>
+            The configuration
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.ApplicationModule.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.ApplicationModule" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.ApplicationModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            Override to add registrations to the container.
+            </summary>
+            <param name="builder">The builder through which components can be
+            registered.</param>
+            <remarks>Note that the ContainerBuilder parameter is unique to this module.</remarks>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.MediatorModule">
+            <summary>
+            Mediator Module class for autofac
+            </summary>
+            <seealso cref="T:Autofac.Module" />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.MediatorModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            Override to add registrations to the container.
+            </summary>
+            <param name="builder">The builder through which components can be
+            registered.</param>
+            <remarks>Note that the ContainerBuilder parameter is unique to this module.</remarks>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.RepositoryModules">
+            <summary>
+            Repository registration module
+            </summary>
+            <seealso cref="!:Agrira.Api.Infrastructure.Autofac.RepositoryModule" />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.RepositoryModules.#ctor(Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.DataBase.IDbFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.RepositoryModules" /> class.
+            </summary>
+            <param name="dbFactory">The database factory.</param>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.AutofacModules.RepositoryModules.Load(Autofac.ContainerBuilder)">
+            <summary>
+            Register all repositories using <see cref="T:Autofac.ContainerBuilder" />
+            </summary>
+            <param name="builder">Builder to register all repositories</param>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler">
+            <summary>
+            Class WeatherCommandHandler.
+            Implements the <see cref="!:MediatR.IRequestHandler&lt;Domain.Commands.ReadWeatherCommand, Domain.CommandResponses.ReadWeatherCommandResponse&gt;" />
+            </summary>
+            <seealso cref="!:MediatR.IRequestHandler&lt;Domain.Commands.ReadWeatherCommand, Domain.CommandResponses.ReadWeatherCommandResponse&gt;" />
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler._logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler._mapper">
+            <summary>
+            The mapper
+            </summary>
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler._weatherRepository">
+            <summary>
+            The weather repository
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler.#ctor(Microsoft.Extensions.Logging.ILogger{Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler},AutoMapper.IMapper,Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.Interfaces.IWeatherRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler" /> class.
+            </summary>
+            <param name="logger">The logger.</param>
+            <param name="mapper">The mapper.</param>
+            <param name="weatherRepository">The weather repository.</param>
+            <exception cref="T:System.ArgumentNullException">logger</exception>
+            <exception cref="T:System.ArgumentNullException">mapper</exception>
+            <exception cref="T:System.ArgumentNullException">weatherRepository</exception>
+            <exception cref="T:System.ArgumentNullException">logger</exception>
+            <exception cref="T:System.ArgumentNullException">mapper</exception>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.CommandHandler.WeatherCommandHandler.Handle(Microservices.GeneratingChaos.Services.Weather.Domain.Commands.ReadWeatherCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles the specified request.
+            </summary>
+            <param name="request">The request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>Task&lt;ReadWeatherCommandResponse&gt;.</returns>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Mappers.WeatherForecastProfile">
+            <summary>
+            Class WeatherForecastProfile.
+            Implements the <see cref="T:AutoMapper.Profile" />
+            </summary>
+            <seealso cref="T:AutoMapper.Profile" />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Mappers.WeatherForecastProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Mappers.WeatherForecastProfile"/> class.
+            </summary>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.Interfaces.IWeatherRepository">
+            <summary>
+            Interface IWeatherRepository
+            Implements the <see cref="!:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Repositories.IRepository&lt;Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast&gt;" />
+            </summary>
+            <seealso cref="!:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Repositories.IRepository&lt;Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast&gt;" />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.Interfaces.IWeatherRepository.GetByCityId(System.Guid)">
+            <summary>
+            Gets the by city identifier.
+            </summary>
+            <param name="cityId">The city identifier.</param>
+            <returns>Task&lt;IEnumerable&lt;WeatherForecast&gt;&gt;.</returns>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository">
+            <summary>
+            Class WeatherForecastRepository.
+            Implements the <see cref="!:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Repositories.RepositoryBase&lt;Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast&gt;" />
+            Implements the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.Interfaces.IWeatherRepository" />
+            </summary>
+            <seealso cref="!:Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Repositories.RepositoryBase&lt;Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast&gt;" />
+            <seealso cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.Interfaces.IWeatherRepository" />
+            <inheridoc />
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository._idGenerator">
+            <summary>
+            The identifier generator
+            </summary>
+        </member>
+        <member name="F:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository._date">
+            <summary>
+            The date
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.#ctor(MongoDB.Driver.IMongoCollection{Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast},Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Generators.Interfaces.IIdGenerator,Microservices.GeneratingChaos.BuildingBlocks.Infrastructure.Generators.Interfaces.IDate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository"/> class.
+            </summary>
+            <param name="mongoCollection">The mongo collection.</param>
+            <param name="idGenerator">The identifier generator.</param>
+            <param name="date">The date.</param>
+            <exception cref="T:System.ArgumentNullException">idGenerator</exception>
+            <exception cref="T:System.ArgumentNullException">date</exception>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.Query">
+            <summary>
+            Gets or sets the query.
+            </summary>
+            <value>The query.</value>
+            <inheridoc />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.AddAsync(Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast)">
+            <summary>
+            add as an asynchronous operation.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns>The added entity</returns>
+            <inheridoc />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.AddManyAsync(System.Collections.Generic.IEnumerable{Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast})">
+            <summary>
+            add many as an asynchronous operation.
+            </summary>
+            <param name="entities">The entities.</param>
+            <returns>Task.</returns>
+            <inheridoc />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.GetAllAsync">
+            <summary>
+            get all as an asynchronous operation.
+            </summary>
+            <returns>Task&lt;IEnumerable&lt;TEntity&gt;&gt;.</returns>
+            <inheridoc />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.GetByCityId(System.Guid)">
+            <summary>
+            Gets the by city identifier.
+            </summary>
+            <param name="cityId">The city identifier.</param>
+            <returns>Task&lt;IEnumerable&lt;WeatherForecast&gt;&gt;.</returns>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.GetByIdAsync(System.Guid)">
+            <summary>
+            get by identifier as an asynchronous operation.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Task&lt;TEntity&gt;.</returns>
+            <inheridoc />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.RemoveAsync(System.Guid)">
+            <summary>
+            remove as an asynchronous operation.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Task.</returns>
+            <inheridoc />
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Infrastructure.Repository.WeatherForecastRepository.UpdateAsync(Microservices.GeneratingChaos.Services.Weather.Domain.Entities.WeatherForecast)">
+            <summary>
+            update as an asynchronous operation.
+            </summary>
+            <param name="entity">The entity.</param>
+            <inheridoc />
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Program">
+            <summary>
+            Class Program.
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Program.BuildWebHost(System.String[])">
+            <summary>
+            Builds the web host.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>IWebHost.</returns>
+        </member>
+        <member name="T:Microservices.GeneratingChaos.Services.Weather.Startup">
+            <summary>
+            Class Startup.
+            </summary>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microservices.GeneratingChaos.Services.Weather.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:Microservices.GeneratingChaos.Services.Weather.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services">The services.</param>
+            <returns>IServiceProvider.</returns>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Configures the specified application.
+            </summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+            <param name="loggerFactory">The logger factory.</param>
+            <param name="lifetime">The lifetime.</param>
+            <param name="cache">The cache.</param>
+        </member>
+        <member name="M:Microservices.GeneratingChaos.Services.Weather.Startup.SeedData(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Seeds the data.
+            </summary>
+            <param name="app">The application builder.</param>
+            <param name="lifetime">The lifetime.</param>
+            <param name="cache">The cache.</param>
+        </member>
+    </members>
+</doc>

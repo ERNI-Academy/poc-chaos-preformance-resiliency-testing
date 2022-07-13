@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+  microservices.generatingchaos.eventbus:
+    environment:
+      - RABBITMQ_DEFAULT_USER=${MICROSERVICES_GENERATINGCHAOS_EVENT_BUS_USERNAME}
+      - RABBITMQ_DEFAULT_PASS=${MICROSERVICES_GENERATINGCHAOS_EVENT_BUS_PASSWORD}
+    ports:
+      - '5006:15672'
+      - '5672:5672'
+  
+  microservices.generatingchaos.api.data:
+    ports:
+      - "27020:27017"
+
+  microservices.generatingchaos.weather.data:
+    ports:
+      - "27021:27017"
+
+  microservices.generatingchaos.services.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DbConnectionString=mongodb://microservices.generatingchaos.api.data
+      - DatabaseName=Api
+      - WeatherServiceUrl=http://microservices.generatingchaos.services.weather/
+      - RedisCacheUrl=microservices.generatingchaos.api.cache
+      - RedisCacheInstance=ApiCache
+    ports:
+      - "5001:80"
+
+  microservices.generatingchaos.services.weather:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DbConnectionString=mongodb://microservices.generatingchaos.weather.data
+      - DatabaseName=Weather
+      - RedisCacheUrl=microservices.generatingchaos.weather.cache
+      - RedisCacheInstance=WeatherServiceCache
+    ports:
+      - "5002:80"
+
+  microservices.generatingchaos.ui:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ApiUrl=http://microservices.generatingchaos.services.api
+    ports:
+      - "5000:80"

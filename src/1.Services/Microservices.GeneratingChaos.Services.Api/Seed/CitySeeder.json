@@ -1,0 +1,42 @@
+[
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "CityName": "Barcelona",
+    "Country": "Spain"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "CityName": "Madrid",
+    "Country": "Spain"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "CityName": "Zurich",
+    "Country": "Switzerland"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "CityName": "Frankfurt",
+    "Country": "Germany"
+  },
+  {
+    "CityId": "59B06FC3-25C5-4EFC-9233-5619D2F85432",
+    "CityName": "Bratislava",
+    "Country": "Slovakia"
+  },
+  {
+    "CityId": "62433281-DFC8-42CD-9579-8D1397075340",
+    "CityName": "Cluj-Napoca",
+    "Country": "Romania"
+  },
+  {
+    "CityId": "9A9D385C-D1E3-44D7-B258-A5E77B32FE0F",
+    "CityName": "Singapore",
+    "Country": "Singapore"
+  },
+  {
+    "CityId": "9B395507-0FCB-4B3C-9326-C0DF4EE5C737",
+    "CityName": "Manila",
+    "Country": "Philippines"
+  }
+]

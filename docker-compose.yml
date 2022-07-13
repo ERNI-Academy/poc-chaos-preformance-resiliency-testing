@@ -1,0 +1,58 @@
+version: '3.4'
+
+services:
+  microservices.generatingchaos.weather.cache:
+    image: redis
+    networks:
+      - backend
+
+  microservices.generatingchaos.api.cache:
+    image: redis
+    networks:
+      - backend
+
+
+  microservices.generatingchaos.weather.data:
+    image: mongo
+    networks:
+      - backend
+
+  microservices.generatingchaos.api.data:
+    image: mongo
+    networks:
+      - backend
+
+  microservices.generatingchaos.eventbus:
+    image: rabbitmq:3-management-alpine
+    networks:
+      - backend
+
+  microservices.generatingchaos.services.api:
+    image: ${DOCKER_REGISTRY-}microservicesgeneratingchaosservicesapi
+    build:
+      context: .
+      dockerfile: src/1.Services/Microservices.GeneratingChaos.Services.Api/Dockerfile
+    networks:
+      - backend
+      - frontend 
+
+  microservices.generatingchaos.services.weather:
+    image: ${DOCKER_REGISTRY-}microservicesgeneratingchaosservicesweather
+    build:
+      context: .
+      dockerfile: src/1.Services/Microservices.GeneratingChaos.Services.Weather/Dockerfile
+    networks:
+      - backend
+
+  microservices.generatingchaos.ui:
+    image: ${DOCKER_REGISTRY-}microservicesgeneratingchaosui
+    build:
+      context: .
+      dockerfile: src/2.UI/Microservices.GeneratingChaos.UI/Dockerfile
+    networks:
+      - frontend 
+
+networks:
+  frontend: null
+  backend: null
+

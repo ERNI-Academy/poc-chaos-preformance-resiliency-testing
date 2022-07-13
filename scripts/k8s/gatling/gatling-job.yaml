@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: gatlingapibehavior
+  namespace: generating-chaos
+spec:
+  template:
+    metadata:
+      labels:
+        app: gatlingapibehavior
+    spec:
+      restartPolicy: Never
+      nodeSelector:
+        gatling: "true"
+      containers:
+      - image: generatingchaoscontainerregistry.azurecr.io/microservices.generatingchaos.gatling:latest
+        imagePullPolicy: Always
+        name: gatlingapibehavior
+        command: ["bash", "/opt/gatling/conf/push-gatling.sh", "test.api.ApiBehaviorK8s"]

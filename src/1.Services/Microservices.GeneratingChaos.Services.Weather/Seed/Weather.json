@@ -1,0 +1,1230 @@
+[
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-18",
+    "Temperature": "22.5",
+    "Humidity": "42",
+    "Pressure": "1013.08",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-19",
+    "Temperature": "24",
+    "Humidity": "43",
+    "Pressure": "1008.84",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-20",
+    "Temperature": "18.53",
+    "Humidity": "44",
+    "Pressure": "1007.64",
+    "Description": "Moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-21",
+    "Temperature": "14.3",
+    "Humidity": "67",
+    "Pressure": "1017.89",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-22",
+    "Temperature": "13.58",
+    "Humidity": "83",
+    "Pressure": "1013.79",
+    "Description": "Heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-23",
+    "Temperature": "18.25",
+    "Humidity": "88",
+    "Pressure": "1000.25",
+    "Description": "Very heavy rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-24",
+    "Temperature": "16.46",
+    "Humidity": "70",
+    "Pressure": "1008.53",
+    "Description": "Heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-25",
+    "Temperature": "19.58",
+    "Humidity": "51",
+    "Pressure": "1009.92",
+    "Description": "Heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-26",
+    "Temperature": "20.27",
+    "Humidity": "53",
+    "Pressure": "1008.86",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-27",
+    "Temperature": "20.43",
+    "Humidity": "43",
+    "Pressure": "1013.47",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-28",
+    "Temperature": "20.45",
+    "Humidity": "57",
+    "Pressure": "1012.02",
+    "Description": "Broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-29",
+    "Temperature": "20.58",
+    "Humidity": "54",
+    "Pressure": "1011.63",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-30",
+    "Temperature": "18.03",
+    "Humidity": "79",
+    "Pressure": "1004.38",
+    "Description": "Very heavy rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-10-31",
+    "Temperature": "17.85",
+    "Humidity": "65",
+    "Pressure": "1004.02",
+    "Description": "Moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-11-01",
+    "Temperature": "18.94",
+    "Humidity": "57",
+    "Pressure": "1007.04",
+    "Description": "Heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-11-02",
+    "Temperature": "13.73",
+    "Humidity": "40",
+    "Pressure": "1016.29",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "F56FEB3D-285D-422F-A85B-DF945CBE948A",
+    "Date": "2019-11-03",
+    "Temperature": "11.95",
+    "Humidity": "46",
+    "Pressure": "1017.97",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-18",
+    "Temperature": "14.81",
+    "Humidity": "77",
+    "Pressure": "1014.33",
+    "Description": "Few clouds",
+    "Icon": "02d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-19",
+    "Temperature": "12.81",
+    "Humidity": "65",
+    "Pressure": "1009.1",
+    "Description": "Moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-20",
+    "Temperature": "9.18",
+    "Humidity": "67",
+    "Pressure": "1012.11",
+    "Description": "Light Rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-21",
+    "Temperature": "13.09",
+    "Humidity": "48",
+    "Pressure": "1017.45",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-22",
+    "Temperature": "14.65",
+    "Humidity": "36",
+    "Pressure": "1014.96",
+    "Description": "Scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-23",
+    "Temperature": "14.53",
+    "Humidity": "47",
+    "Pressure": "1007.98",
+    "Description": "Broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-24",
+    "Temperature": "14.4",
+    "Humidity": "46",
+    "Pressure": "1015.32",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-25",
+    "Temperature": "15.69",
+    "Humidity": "47",
+    "Pressure": "1014.8",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-26",
+    "Temperature": "16.27",
+    "Humidity": "49",
+    "Pressure": "1014.35",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-27",
+    "Temperature": "15.46",
+    "Humidity": "63",
+    "Pressure": "1016.83",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-28",
+    "Temperature": "15.19",
+    "Humidity": "60",
+    "Pressure": "1012.8",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-29",
+    "Temperature": "16.89",
+    "Humidity": "53",
+    "Pressure": "1006.42",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-30",
+    "Temperature": "11.08",
+    "Humidity": "88",
+    "Pressure": "999.25",
+    "Description": "Very heavy rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-10-31",
+    "Temperature": "10.97",
+    "Humidity": "87",
+    "Pressure": "1004.85",
+    "Description": "Moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-11-01",
+    "Temperature": "15.96",
+    "Humidity": "55",
+    "Pressure": "1009.62",
+    "Description": "Scttered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-11-02",
+    "Temperature": "16.23",
+    "Humidity": "54",
+    "Pressure": "1013.55",
+    "Description": "Broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "CB077022-47EF-4EB0-9913-90218FEA548A",
+    "Date": "2019-11-03",
+    "Temperature": "12.48",
+    "Humidity": "81",
+    "Pressure": "1017.04",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-18",
+    "Temperature": "11.99",
+    "Humidity": "90",
+    "Pressure": "1014.53",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-19",
+    "Temperature": "13.98",
+    "Humidity": "84",
+    "Pressure": "1011.38",
+    "Description": "Light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-20",
+    "Temperature": "18.75",
+    "Humidity": "60",
+    "Pressure": "1008.85",
+    "Description": "Broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-21",
+    "Temperature": "11.07",
+    "Humidity": "90",
+    "Pressure": "1019.81",
+    "Description": "Moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-22",
+    "Temperature": "12.85",
+    "Humidity": "78",
+    "Pressure": "1022.59",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-23",
+    "Temperature": "13.23",
+    "Humidity": "77",
+    "Pressure": "1016.11",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-24",
+    "Temperature": "18.1",
+    "Humidity": "63",
+    "Pressure": "1015.36",
+    "Description": "Broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-25",
+    "Temperature": "18.1",
+    "Humidity": "62",
+    "Pressure": "1015.36",
+    "Description": "Broken Clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-26",
+    "Temperature": "17.3",
+    "Humidity": "70",
+    "Pressure": "1018.26",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-27",
+    "Temperature": "16.92",
+    "Humidity": "70",
+    "Pressure": "1016.3",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-28",
+    "Temperature": "17.54",
+    "Humidity": "66",
+    "Pressure": "1019.06",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-29",
+    "Temperature": "12.26",
+    "Humidity": "82",
+    "Pressure": "1018.52",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-30",
+    "Temperature": "11.53",
+    "Humidity": "72",
+    "Pressure": "1016.73",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-10-31",
+    "Temperature": "9.88",
+    "Humidity": "64",
+    "Pressure": "1016.67",
+    "Description": "Scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-11-01",
+    "Temperature": "5.89",
+    "Humidity": "63",
+    "Pressure": "1012.54",
+    "Description": "Overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-11-02",
+    "Temperature": "5.89",
+    "Humidity": "50",
+    "Pressure": "1020.38",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "74E0A2F1-4628-4E07-9909-9EA1FD43F93E",
+    "Date": "2019-11-03",
+    "Temperature": "8.04",
+    "Humidity": "48",
+    "Pressure": "1022.27",
+    "Description": "Sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-18",
+    "Temperature": 9.82,
+    "Pressure": 1011.95,
+    "Humidity": 83,
+    "Description": "overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-19",
+    "Temperature": 11.4,
+    "Pressure": 1008.55,
+    "Humidity": 96,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-20",
+    "Temperature": 15.93,
+    "Pressure": 1007.42,
+    "Humidity": 79,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-21",
+    "Temperature": 12.41,
+    "Pressure": 1018.62,
+    "Humidity": 92,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-22",
+    "Temperature": 15.25,
+    "Pressure": 1024.44,
+    "Humidity": 61,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-23",
+    "Temperature": 15.25,
+    "Pressure": 1024.44,
+    "Humidity": 61,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-24",
+    "Temperature": 16.33,
+    "Pressure": 1016.81,
+    "Humidity": 70,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-25",
+    "Temperature": 16.63,
+    "Pressure": 1015.23,
+    "Humidity": 73,
+    "Description": "overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-26",
+    "Temperature": 16.52,
+    "Pressure": 1022.31,
+    "Humidity": 66,
+    "Description": "few clouds",
+    "Icon": "02d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-27",
+    "Temperature": 15.91,
+    "Pressure": 1017,
+    "Humidity": 71,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-28",
+    "Temperature": 18.09,
+    "Pressure": 1019.55,
+    "Humidity": 67,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-29",
+    "Temperature": 13.45,
+    "Pressure": 1021.65,
+    "Humidity": 81,
+    "Description": "overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-30",
+    "Temperature": 11.29,
+    "Pressure": 1022.07,
+    "Humidity": 58,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-31",
+    "Temperature": 7.62,
+    "Pressure": 1025.49,
+    "Humidity": 44,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-01",
+    "Temperature": 6.79,
+    "Pressure": 1021.27,
+    "Humidity": 41,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-02",
+    "Temperature": 6.81,
+    "Pressure": 1024.14,
+    "Humidity": 44,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-03",
+    "Temperature": 6.39,
+    "Pressure": 1026.61,
+    "Humidity": 39,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+
+  {
+    "CityId": "59B06FC3-25C5-4EFC-9233-5619D2F85432",
+    "Date": "2019-10-18",
+    "Temperature": 9.75,
+    "Pressure": 1015.25,
+    "Humidity": 87,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-19",
+    "Temperature": 14.83,
+    "Pressure": 1013.47,
+    "Humidity": 77,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-20",
+    "Temperature": 16.17,
+    "Pressure": 1014.71,
+    "Humidity": 77,
+    "Description": "few clouds",
+    "Icon": "02d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-21",
+    "Temperature": 17.13,
+    "Pressure": 1016.12,
+    "Humidity": 69,
+    "Description": "few clouds",
+    "Icon": "02d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-22",
+    "Temperature": 16.45,
+    "Pressure": 1022.66,
+    "Humidity": 74,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-23",
+    "Temperature": 17.85,
+    "Pressure": 1020.28,
+    "Humidity": 66,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-24",
+    "Temperature": 17.32,
+    "Pressure": 1016.62,
+    "Humidity": 60,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-25",
+    "Temperature": 16.76,
+    "Pressure": 1020.23,
+    "Humidity": 57,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-26",
+    "Temperature": 17.47,
+    "Pressure": 1020.89,
+    "Humidity": 52,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-27",
+    "Temperature": 16.75,
+    "Pressure": 1020.76,
+    "Humidity": 59,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-28",
+    "Temperature": 15.73,
+    "Pressure": 1020.1,
+    "Humidity": 56,
+    "Description": "few clouds",
+    "Icon": "02d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-29",
+    "Temperature": 12.59,
+    "Pressure": 1017.48,
+    "Humidity": 78,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-30",
+    "Temperature": 6.1,
+    "Pressure": 1022.33,
+    "Humidity": 45,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-31",
+    "Temperature": 4.5,
+    "Pressure": 1024.33,
+    "Humidity": 50,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-01",
+    "Temperature": 4.6,
+    "Pressure": 1023.14,
+    "Humidity": 47,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-02",
+    "Temperature": 2.66,
+    "Pressure": 1027.73,
+    "Humidity": 49,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-03",
+    "Temperature": 6.22,
+    "Pressure": 1030.51,
+    "Humidity": 33,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+
+  {
+    "CityId": "62433281-DFC8-42CD-9579-8D1397075340",
+    "Date": "2019-10-18",
+    "Temperature": 9.5,
+    "Pressure": 1017.85,
+    "Humidity": 70,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-19",
+    "Temperature": 17.55,
+    "Pressure": 1018.52,
+    "Humidity": 52,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-20",
+    "Temperature": 18.65,
+    "Pressure": 1020.52,
+    "Humidity": 50,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-21",
+    "Temperature": 18.92,
+    "Pressure": 1020.97,
+    "Humidity": 49,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-22",
+    "Temperature": 20.35,
+    "Pressure": 1022.29,
+    "Humidity": 46,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-23",
+    "Temperature": 19.45,
+    "Pressure": 1022.04,
+    "Humidity": 51,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-24",
+    "Temperature": 19.22,
+    "Pressure": 1020.41,
+    "Humidity": 50,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-25",
+    "Temperature": 18.59,
+    "Pressure": 1020.03,
+    "Humidity": 49,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-26",
+    "Temperature": 17.83,
+    "Pressure": 1020.51,
+    "Humidity": 50,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-27",
+    "Temperature": 17.09,
+    "Pressure": 1022.17,
+    "Humidity": 53,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-28",
+    "Temperature": 16.3,
+    "Pressure": 1021.05,
+    "Humidity": 55,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-29",
+    "Temperature": 16.06,
+    "Pressure": 1015.41,
+    "Humidity": 55,
+    "Description": "few clouds",
+    "Icon": "02d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-30",
+    "Temperature": 7.32,
+    "Pressure": 1014.75,
+    "Humidity": 65,
+    "Description": "overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-31",
+    "Temperature": 3.29,
+    "Pressure": 1022.08,
+    "Humidity": 48,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-01",
+    "Temperature": 3.45,
+    "Pressure": 1021.07,
+    "Humidity": 47,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-02",
+    "Temperature": 4.65,
+    "Pressure": 1025.16,
+    "Humidity": 41,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-03",
+    "Temperature": 6.42,
+    "Pressure": 1031.43,
+    "Humidity": 46,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "9A9D385C-D1E3-44D7-B258-A5E77B32FE0F",
+    "Date": "2019-10-18",
+    "Temperature": 26.21,
+    "Pressure": 1008.19,
+    "Humidity": 93,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-19",
+    "Temperature": 33.06,
+    "Pressure": 1010.59,
+    "Humidity": 56,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-20",
+    "Temperature": 31.94,
+    "Pressure": 1010.65,
+    "Humidity": 55,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-21",
+    "Temperature": 30.94,
+    "Pressure": 1009.73,
+    "Humidity": 64,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-22",
+    "Temperature": 28.34,
+    "Pressure": 1009.73,
+    "Humidity": 79,
+    "Description": "heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-23",
+    "Temperature": 28.34,
+    "Pressure": 1009.73,
+    "Humidity": 79,
+    "Description": "heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-24",
+    "Temperature": 25.79,
+    "Pressure": 1009.82,
+    "Humidity": 85,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-25",
+    "Temperature": 26.57,
+    "Pressure": 1010.07,
+    "Humidity": 79,
+    "Description": "overcast clouds",
+    "Icon": "04d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-26",
+    "Temperature": 25.38,
+    "Pressure": 1010.68,
+    "Humidity": 87,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-27",
+    "Temperature": 30.22,
+    "Pressure": 1010.13,
+    "Humidity": 59,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-28",
+    "Temperature": 32.28,
+    "Pressure": 1010.34,
+    "Humidity": 52,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-29",
+    "Temperature": 30.04,
+    "Pressure": 1010.32,
+    "Humidity": 62,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-30",
+    "Temperature": 29.2,
+    "Pressure": 1010.84,
+    "Humidity": 67,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-31",
+    "Temperature": 28.41,
+    "Pressure": 1010.88,
+    "Humidity": 75,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-01",
+    "Temperature": 31.85,
+    "Pressure": 1009.87,
+    "Humidity": 51,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-02",
+    "Temperature": 31.82,
+    "Pressure": 1010.06,
+    "Humidity": 54,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-03",
+    "Temperature": 31.02,
+    "Pressure": 1010.39,
+    "Humidity": 56,
+    "Description": "broken clouds",
+    "Icon": "04d"
+  },
+
+  {
+    "CityId": "9B395507-0FCB-4B3C-9326-C0DF4EE5C737",
+    "Date": "2019-10-18",
+    "Temperature": 30.59,
+    "Pressure": 1012.19,
+    "Humidity": 67,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-19",
+    "Temperature": 28.8,
+    "Pressure": 1011.21,
+    "Humidity": 71,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-20",
+    "Temperature": 29.58,
+    "Pressure": 1009.98,
+    "Humidity": 68,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-21",
+    "Temperature": 29.56,
+    "Pressure": 1009.25,
+    "Humidity": 65,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-22",
+    "Temperature": 29.16,
+    "Pressure": 1009.79,
+    "Humidity": 68,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-23",
+    "Temperature": 28.79,
+    "Pressure": 1010.51,
+    "Humidity": 67,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-24",
+    "Temperature": 27.8,
+    "Pressure": 1010.68,
+    "Humidity": 70,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-25",
+    "Temperature": 28.14,
+    "Pressure": 1010.36,
+    "Humidity": 70,
+    "Description": "heavy intensity rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-26",
+    "Temperature": 27.93,
+    "Pressure": 1010.8,
+    "Humidity": 72,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-27",
+    "Temperature": 27.22,
+    "Pressure": 1009.16,
+    "Humidity": 78,
+    "Description": "moderate rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-28",
+    "Temperature": 27.76,
+    "Pressure": 1009.03,
+    "Humidity": 72,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-29",
+    "Temperature": 27.55,
+    "Pressure": 1009.16,
+    "Humidity": 72,
+    "Description": "light rain",
+    "Icon": "10d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-30",
+    "Temperature": 28.27,
+    "Pressure": 1009.82,
+    "Humidity": 71,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-10-31",
+    "Temperature": 28.29,
+    "Pressure": 1011.17,
+    "Humidity": 70,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-01",
+    "Temperature": 28.71,
+    "Pressure": 1012.37,
+    "Humidity": 67,
+    "Description": "sky is clear",
+    "Icon": "01d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-02",
+    "Temperature": 28.69,
+    "Pressure": 1011.74,
+    "Humidity": 67,
+    "Description": "scattered clouds",
+    "Icon": "03d"
+  },
+  {
+    "CityId": "5372BB88-1193-44A4-8C75-353A13F8F2A2",
+    "Date": "2019-11-03",
+    "Temperature": 26.39,
+    "Pressure": 1010.79,
+    "Humidity": 87,
+    "Description": "overcast clouds",
+    "Icon": "04n"
+  }
+
+]

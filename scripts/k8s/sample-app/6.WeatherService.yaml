@@ -1,0 +1,98 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weatherstatefulset
+  namespace: generating-chaos
+spec:
+  replicas: 1
+  template:
+    metadata:
+      namespace: generating-chaos
+      labels:
+        role: weatherservice
+        app: weatherservice
+        kube-monkey/enabled: enabled
+        kube-monkey/identifier: monkey-victim
+        kube-monkey/mtbf: '1'
+        kube-monkey/kill-mode: "fixed"
+        kube-monkey/kill-value: '1'
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: weatherservice
+          image: generatingchaoscontainerregistry.azurecr.io/microservices.generatingchaos.services.weather
+          ports:
+          - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+          env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: "Development"
+          - name: DbConnectionString
+            value: "mongodb://mongo-service:27017/?replicaSet=rs0"
+          - name: DatabaseName
+            value: "Weather"
+          - name: WeatherServiceUrl
+            value: http://weatherservice
+          - name: RedisCacheUrl
+            value: "microservices-generatingchaos-weather-cache:6379"
+          - name: RedisCacheInstance
+            value: "WeatherCache"
+  selector:
+    matchLabels:
+      app: weatherservice
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: weatherstatefulset
+  namespace: generating-chaos
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: weatherstatefulset
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 50
+  - type: Pods
+    pods:
+      metric:
+        name: packets-per-second
+      target:
+        type: AverageValue
+        averageValue: 0.1k
+  - type: Object
+    object:
+      metric:
+        name: requests-per-second
+      describedObject:
+        apiVersion: networking.k8s.io/v1
+        kind: Ingress
+        name: main-route
+      target:
+        type: Value
+        value: 0.1k
+---         
+kind: Service
+apiVersion: v1
+metadata:
+  namespace: generating-chaos
+  name: weatherservice
+  labels:
+    name: weatherservice
+spec:  
+  ports:
+  - port: 80
+  type: ClusterIP
+  selector:
+    app: weatherservice

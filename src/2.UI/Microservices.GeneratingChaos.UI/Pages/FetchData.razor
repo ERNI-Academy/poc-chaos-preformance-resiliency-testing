@@ -1,0 +1,174 @@
+﻿@page "/fetchdata"
+
+@using Microservices.GeneratingChaos.UI.Domain.Models
+@using Microservices.GeneratingChaos.UI.Infrastructure.Services.Interfaces
+@using Syncfusion.EJ2.Blazor.Grids
+@using Syncfusion.EJ2.Blazor.DropDowns
+@inject Sotsera.Blazor.Toaster.IToaster Toaster
+
+@inject IJSRuntime JsRuntime;
+@inject HttpClient Http
+@inject IApiService apiService
+
+<div class=" @((isLoading ? "display-flex" : "display-none" )) overlay">
+    <div class="w-100 d-flex justify-content-center align-items-start" style="padding-top: 50vh;">
+        <div class="spinner"></div>
+    </div>
+</div>
+
+<h1>Weather forecast</h1>
+
+<p>Select a city to get the weather forecast</p>
+
+<div class="col-lg-12 control-section">
+    <div class="control_wrapper">
+        <EjsDropDownList @bind-Value="@selectedCity" TValue="string" PopupHeight="230px" Placeholder="Select a city" DataSource="@cities">
+            <DropDownListFieldSettings Text="Text" Value="ID"></DropDownListFieldSettings>
+            <DropDownListEvents ValueChange="@((Action<Syncfusion.EJ2.Blazor.DropDowns.ChangeEventArgs<string>>) (args => OnChange(args)))"></DropDownListEvents>
+        </EjsDropDownList>
+    </div>
+</div>
+
+@if (selectedCity != null)
+{
+    <hr class="my-4">
+    <div class="row">
+        <div class="control-section mb-5 col-6">
+
+            <EjsChart Title="Weather forecast">
+                <ChartArea><ChartAreaBorder Width="0"></ChartAreaBorder></ChartArea>
+                <ChartPrimaryXAxis LabelFormat="MMM" ValueType="Syncfusion.EJ2.Blazor.Charts.ValueType.DateTime" EdgeLabelPlacement="EdgeLabelPlacement.Shift">
+                    <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
+                </ChartPrimaryXAxis>
+                <ChartPrimaryYAxis LabelFormat="{value}%" RangePadding="ChartRangePadding.None" Minimum="0" Maximum="100" Interval="20">
+                    <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+                    <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                </ChartPrimaryYAxis>
+                <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                <ChartSeriesCollection>
+                    <ChartSeries DataSource="@chartData" Name="Temp. (C)" XName="xValue" Width="2"
+                                 Opacity="1" YName="temperatureValue" Type="ChartSeriesType.Line">
+                        <ChartMarker Visible="true" Width="10" Height="10">
+                        </ChartMarker>
+                    </ChartSeries>
+                    <ChartSeries DataSource="@chartData" Name="Humidity" XName="xValue" Width="2"
+                                 Opacity="1" YName="humidityValue" Type="ChartSeriesType.Line">
+                        <ChartMarker Visible="true" Width="10" Height="10">
+                        </ChartMarker>
+                    </ChartSeries>
+                </ChartSeriesCollection>
+            </EjsChart>
+        </div>
+        <div class="control-section mb-5 col-6">
+
+            <EjsChart Title="Weather forecast">
+                <ChartArea><ChartAreaBorder Width="0"></ChartAreaBorder></ChartArea>
+                <ChartPrimaryXAxis LabelFormat="yMd" IntervalType="IntervalType.Days" EdgeLabelPlacement="EdgeLabelPlacement.Shift">
+                    <ChartAxisMajorGridLines Width="0"></ChartAxisMajorGridLines>
+                </ChartPrimaryXAxis>
+                <ChartPrimaryYAxis LabelFormat="{value}%" RangePadding="ChartRangePadding.None" Minimum="0" Maximum="100" Interval="20">
+                    <ChartAxisLineStyle Width="0"></ChartAxisLineStyle>
+                    <ChartAxisMajorTickLines Width="0"></ChartAxisMajorTickLines>
+                </ChartPrimaryYAxis>
+                <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                <ChartSeriesCollection>
+                    <ChartSeries DataSource="@chartData" Name="Pressure" XName="xValue" Width="2"
+                                 Opacity="1" YName="pressureValue" Type="ChartSeriesType.Line">
+                        <ChartMarker Visible="true" Width="10" Height="10">
+                        </ChartMarker>
+                    </ChartSeries>
+                </ChartSeriesCollection>
+            </EjsChart>
+        </div>
+    </div>
+
+    <div class="col-lg-12 control-section mb-5">
+        <div class="content-wrapper">
+            <div class="row">
+                <EjsGrid ModelType="@Model" DataSource="@forecasts" AllowPaging="true">
+                    <GridColumns>
+                        <GridColumn HeaderText="Icon" Width="100">
+                            <Template>
+                                @{
+                                    var prod = (context as WheatherForecastDto);
+                                    <div class="image">
+                                        <img style="height:50px" src="@($"https://openweathermap.org/img/wn/{@prod.Icon}.png")" />
+                                    </div>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn Field=@nameof(WheatherForecastDto.Date) HeaderText="Date" Format="yMd" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+                        <GridColumn Field=@nameof(WheatherForecastDto.Temperature) HeaderText="Temperature" Width="150"></GridColumn>
+                        <GridColumn Field=@nameof(WheatherForecastDto.Humidity) HeaderText="Humidity" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+                        <GridColumn Field=@nameof(WheatherForecastDto.Pressure) HeaderText="Pressure" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+                        <GridColumn Field=@nameof(WheatherForecastDto.Icon) HeaderText="Icon" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+                    </GridColumns>
+                </EjsGrid>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    WheatherForecastDto[] forecasts;
+    List<CityDropdown> cities = new List<CityDropdown>();
+    List<LineChartData> chartData = new List<LineChartData>();
+    string selectedCity;
+    bool isLoading = false;
+    WheatherForecastDto Model = new WheatherForecastDto();
+    public class CityDropdown
+    {
+        public string ID { get; set; }
+        public string Text { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetCities();
+        StateHasChanged();
+    }
+
+    private async void OnChange(Syncfusion.EJ2.Blazor.DropDowns.ChangeEventArgs<string> args)
+    {
+        this.IsLoading(true);
+        await this.GetCityWeather(args.Value);
+        this.IsLoading(false);
+    }
+
+    private async Task GetCityWeather(string cityId)
+    {
+        try
+        {
+            var foreCastResponse = await apiService.GetWeatherByCityIdAsync(new Guid(cityId)).ConfigureAwait(false);
+            forecasts = foreCastResponse.ToArray();
+            chartData = new List<LineChartData>();
+            foreach (var forecast in forecasts)
+            {
+                chartData.Add(new LineChartData { xValue = forecast.Date, temperatureValue = forecast.Temperature, humidityValue = forecast.Humidity, pressureValue = forecast.Pressure });
+            }
+        }
+        catch (Exception e)
+        {
+            Toaster.Error(e.Message);
+        }
+    }
+
+    private async Task GetCities()
+    {
+        try
+        {
+            var response = await apiService.GetCitiesAsync().ConfigureAwait(false);
+            cities.AddRange(response.Select(cityDto => new CityDropdown { ID = cityDto.CityId.ToString(), Text = $"{cityDto.CityName} ({cityDto.Country})" }));
+        }
+        catch (Exception e)
+        {
+            Toaster.Error(e.Message);
+        }
+    }
+
+    private void IsLoading(bool isLoading)
+    {
+        this.isLoading = isLoading;
+        this.StateHasChanged();
+    }
+}

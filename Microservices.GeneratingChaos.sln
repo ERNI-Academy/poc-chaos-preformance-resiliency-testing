@@ -1,0 +1,151 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32611.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A848CF21-E426-497B-A76B-145C79931A2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9EA5DDE-3FD1-4DAA-9686-F7B7758A4D68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{5DE80E80-7F2A-4964-8FCD-031827FDA6CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F1F90F1-F17E-48C2-BF21-E543D3012D11}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		AUTHORS.md = AUTHORS.md
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE = LICENSE
+		README.md = README.md
+		SECURITY.md = SECURITY.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.BuildingBlocks", "0.BuildingBlocks", "{39CB55F6-A8BE-442B-9559-1B8F1B255D5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Services", "1.Services", "{78EFC3D9-4211-4DAE-BB5E-D788C0DF585F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.UI", "2.UI", "{188A721B-1938-4E32-84BC-8B73E3CA2143}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.GeneratingChaos.UI", "src\2.UI\Microservices.GeneratingChaos.UI\Microservices.GeneratingChaos.UI.csproj", "{815D6BC9-A091-476E-BB03-B8E77065B041}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.GeneratingChaos.BuildingBlocks", "src\0.BuildingBlocks\Microservices.GeneratingChaos.BuildingBlocks\Microservices.GeneratingChaos.BuildingBlocks.csproj", "{AE1AA63B-AF22-46E0-B1F5-D98177EBBD9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.GeneratingChaos.Services.Api", "src\1.Services\Microservices.GeneratingChaos.Services.Api\Microservices.GeneratingChaos.Services.Api.csproj", "{49557E3D-7F08-4249-8A2C-55C0B86EC0E4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{397781D9-AED3-4B15-B29C-12ACFB9445DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.GeneratingChaos.Services.Weather", "src\1.Services\Microservices.GeneratingChaos.Services.Weather\Microservices.GeneratingChaos.Services.Weather.csproj", "{16B37632-8928-42E0-BB37-B775E41EB9D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.GeneratingChaos.Services.FastApi", "src\1.Services\Microservices.GeneratingChaos.Service.FastApi\Microservices.GeneratingChaos.Services.FastApi.csproj", "{E13E5676-0942-417C-9061-B2FD9A4B66A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{9AB80824-ED2D-4171-83D3-501734277964}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "terraform", "terraform", "{E542E587-46E9-41B6-8B73-7928E40A161D}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\terraform\main.tf = scripts\terraform\main.tf
+		scripts\terraform\outputs.tf = scripts\terraform\outputs.tf
+		scripts\terraform\variables.tf = scripts\terraform\variables.tf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gatling", "gatling", "{804A53A0-5818-4B20-A9CC-D10962A5F051}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\k8s\gatling\gatling-job.yaml = scripts\k8s\gatling\gatling-job.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kube-monkey", "kube-monkey", "{6340998D-CF6A-4581-B8D9-32DD9929EFC8}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\k8s\kube-monkey\1.cluster-role-binding.yaml = scripts\k8s\kube-monkey\1.cluster-role-binding.yaml
+		scripts\k8s\kube-monkey\2.configmap.yaml = scripts\k8s\kube-monkey\2.configmap.yaml
+		scripts\k8s\kube-monkey\3.deployment.yaml = scripts\k8s\kube-monkey\3.deployment.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample-app", "sample-app", "{3B7E51A7-BDCB-4BB3-A628-FFC3D59A2A96}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\k8s\sample-app\1.NameSpace.yaml = scripts\k8s\sample-app\1.NameSpace.yaml
+		scripts\k8s\sample-app\2.ClusterRoleBinding.yaml = scripts\k8s\sample-app\2.ClusterRoleBinding.yaml
+		scripts\k8s\sample-app\3.RedisService.yaml = scripts\k8s\sample-app\3.RedisService.yaml
+		scripts\k8s\sample-app\4.RedisApi.yaml = scripts\k8s\sample-app\4.RedisApi.yaml
+		scripts\k8s\sample-app\5.Mongo.yaml = scripts\k8s\sample-app\5.Mongo.yaml
+		scripts\k8s\sample-app\6.WeatherService.yaml = scripts\k8s\sample-app\6.WeatherService.yaml
+		scripts\k8s\sample-app\7.ApiService.yaml = scripts\k8s\sample-app\7.ApiService.yaml
+		scripts\k8s\sample-app\8.UI.yaml = scripts\k8s\sample-app\8.UI.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Gatling", "3.Gatling", "{B7801473-A90C-473E-B836-A75E543B9EB7}"
+	ProjectSection(SolutionItems) = preProject
+		src\3.Gatling\Dockerfile = src\3.Gatling\Dockerfile
+		src\3.Gatling\gatling.ps1 = src\3.Gatling\gatling.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conf", "conf", "{EC82C76B-A2E4-4BE0-BED1-DB5130249B99}"
+	ProjectSection(SolutionItems) = preProject
+		src\3.Gatling\conf\gatling.conf = src\3.Gatling\conf\gatling.conf
+		src\3.Gatling\conf\push-gatling.sh = src\3.Gatling\conf\push-gatling.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "simulationscripts", "simulationscripts", "{F6C4BCA1-CFBF-4523-8F5E-3E7B898DCFE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "simulations", "simulations", "{47CAA80A-B6FF-487A-BFAF-E7B82134B835}"
+	ProjectSection(SolutionItems) = preProject
+		src\3.Gatling\simulationscripts\simulations\ApiBehavior.docker.scala = src\3.Gatling\simulationscripts\simulations\ApiBehavior.docker.scala
+		src\3.Gatling\simulationscripts\simulations\ApiBehavior.k8s.scala = src\3.Gatling\simulationscripts\simulations\ApiBehavior.k8s.scala
+		src\3.Gatling\simulationscripts\simulations\ApiBehavior.local.scala = src\3.Gatling\simulationscripts\simulations\ApiBehavior.local.scala
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{815D6BC9-A091-476E-BB03-B8E77065B041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815D6BC9-A091-476E-BB03-B8E77065B041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815D6BC9-A091-476E-BB03-B8E77065B041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815D6BC9-A091-476E-BB03-B8E77065B041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1AA63B-AF22-46E0-B1F5-D98177EBBD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1AA63B-AF22-46E0-B1F5-D98177EBBD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1AA63B-AF22-46E0-B1F5-D98177EBBD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1AA63B-AF22-46E0-B1F5-D98177EBBD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49557E3D-7F08-4249-8A2C-55C0B86EC0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49557E3D-7F08-4249-8A2C-55C0B86EC0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49557E3D-7F08-4249-8A2C-55C0B86EC0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49557E3D-7F08-4249-8A2C-55C0B86EC0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397781D9-AED3-4B15-B29C-12ACFB9445DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397781D9-AED3-4B15-B29C-12ACFB9445DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397781D9-AED3-4B15-B29C-12ACFB9445DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397781D9-AED3-4B15-B29C-12ACFB9445DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16B37632-8928-42E0-BB37-B775E41EB9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B37632-8928-42E0-BB37-B775E41EB9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B37632-8928-42E0-BB37-B775E41EB9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B37632-8928-42E0-BB37-B775E41EB9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E13E5676-0942-417C-9061-B2FD9A4B66A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13E5676-0942-417C-9061-B2FD9A4B66A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13E5676-0942-417C-9061-B2FD9A4B66A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13E5676-0942-417C-9061-B2FD9A4B66A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39CB55F6-A8BE-442B-9559-1B8F1B255D5D} = {E9EA5DDE-3FD1-4DAA-9686-F7B7758A4D68}
+		{78EFC3D9-4211-4DAE-BB5E-D788C0DF585F} = {E9EA5DDE-3FD1-4DAA-9686-F7B7758A4D68}
+		{188A721B-1938-4E32-84BC-8B73E3CA2143} = {E9EA5DDE-3FD1-4DAA-9686-F7B7758A4D68}
+		{815D6BC9-A091-476E-BB03-B8E77065B041} = {188A721B-1938-4E32-84BC-8B73E3CA2143}
+		{AE1AA63B-AF22-46E0-B1F5-D98177EBBD9F} = {39CB55F6-A8BE-442B-9559-1B8F1B255D5D}
+		{49557E3D-7F08-4249-8A2C-55C0B86EC0E4} = {78EFC3D9-4211-4DAE-BB5E-D788C0DF585F}
+		{16B37632-8928-42E0-BB37-B775E41EB9D4} = {78EFC3D9-4211-4DAE-BB5E-D788C0DF585F}
+		{E13E5676-0942-417C-9061-B2FD9A4B66A7} = {78EFC3D9-4211-4DAE-BB5E-D788C0DF585F}
+		{9AB80824-ED2D-4171-83D3-501734277964} = {5DE80E80-7F2A-4964-8FCD-031827FDA6CB}
+		{E542E587-46E9-41B6-8B73-7928E40A161D} = {5DE80E80-7F2A-4964-8FCD-031827FDA6CB}
+		{804A53A0-5818-4B20-A9CC-D10962A5F051} = {9AB80824-ED2D-4171-83D3-501734277964}
+		{6340998D-CF6A-4581-B8D9-32DD9929EFC8} = {9AB80824-ED2D-4171-83D3-501734277964}
+		{3B7E51A7-BDCB-4BB3-A628-FFC3D59A2A96} = {9AB80824-ED2D-4171-83D3-501734277964}
+		{B7801473-A90C-473E-B836-A75E543B9EB7} = {E9EA5DDE-3FD1-4DAA-9686-F7B7758A4D68}
+		{EC82C76B-A2E4-4BE0-BED1-DB5130249B99} = {B7801473-A90C-473E-B836-A75E543B9EB7}
+		{F6C4BCA1-CFBF-4523-8F5E-3E7B898DCFE8} = {B7801473-A90C-473E-B836-A75E543B9EB7}
+		{47CAA80A-B6FF-487A-BFAF-E7B82134B835} = {F6C4BCA1-CFBF-4523-8F5E-3E7B898DCFE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EC49E9F-59F8-4939-BBF5-E0B6447ED254}
+	EndGlobalSection
+EndGlobal

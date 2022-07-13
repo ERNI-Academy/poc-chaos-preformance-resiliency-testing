@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kube-monkey-config-map
+  namespace: generating-chaos   
+data:
+  config.toml: |
+    [kubemonkey]
+    run_hour = 0
+    start_hour = 16
+    end_hour = 23
+    blacklisted_namespaces = ["kube-system"]
+    graceperiod_sec= 10
+    dry_run = false
+    [debug]
+    enabled= true
+    schedule_immediate_kill= true
+    timzone="Europe/Berlin"
